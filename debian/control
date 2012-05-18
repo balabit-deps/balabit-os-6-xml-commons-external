@@ -1,0 +1,34 @@
+Source: xml-commons-external
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders: Vincent Fourmond <fourmond@debian.org>, Onkar Shinde <onkarshinde@ubuntu.com>,
+ Damien Raude-Morvan <drazzib@debian.org>
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 7), cdbs, maven-repo-helper
+Build-Depends-Indep: default-jdk
+Homepage: http://xml.apache.org/commons/
+Vcs-Svn: svn://svn.debian.org/svn/pkg-java/trunk/xml-commons-external
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-java/trunk/xml-commons-external
+
+Package: libxml-commons-external-java
+Architecture: all
+Depends: ${misc:Depends}
+Description: XML Commons external code - DOM, SAX, and JAXP, etc
+ xml-commons is focused on common code and guidelines for xml
+ projects.  The first focus will be to organize and have common
+ packaging for the various externally-defined standards code relating
+ to XML - things like the DOM, SAX, and JAXP interfaces.
+
+Package: libxml-commons-external-java-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}
+Description: Documentation of XML Commons external API
+ xml-commons is focussed on common code and guidelines for xml
+ projects.  The first focus will be to organize and have common
+ packaging for the various externally-defined standards code relating
+ to XML - things like the DOM, SAX, and JAXP interfaces.
+ .
+ This package contains class API documentation for XML Commons
+ external API.
